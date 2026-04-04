@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Aura — Магазин квітів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <h1 class="shop-name">FLORA AURA</h1>
+            <div class="cart-status" onclick="toggleCart()">
+                <span>Кошик: </span>
+                <span id="cart-count">0</span> шт.
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Найкращі букети для ваших близьких</h2>
+        <p>Свіжість та краса у кожній пелюстці</p>
+    </section>
+
+    <main class="container">
+        <div class="flower-grid" id="flower-grid">
+            </div>
+    </main>
+
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-content">
+            <button class="close-btn" onclick="toggleCart()">✕</button>
+            <h2>Ваші замовлення</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Разом: <span id="total-price">0</span> грн</strong>
+            </div>
+            <button class="order-btn">Оформити доставку</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
