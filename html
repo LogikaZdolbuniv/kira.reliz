@@ -1,0 +1,12 @@
+<button id="order-btn" class="main-button">Оформити доставку</button>
+
+<div id="modal-overlay" class="overlay">
+    <div class="modal">
+        <h3>Оберіть спосіб оплати</h3>
+        <div class="payment-options">
+            <button class="pay-choice" onclick="completeOrder('карткою')">Оплата карткою</button>
+            <button class="pay-choice" onclick="completeOrder('готівкою')">Оплата готівкою</button>
+        </div>
+        <p id="status-message"></p>
+    </div>
+</div>
