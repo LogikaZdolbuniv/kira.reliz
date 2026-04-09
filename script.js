@@ -1,8 +1,8 @@
 const flowers = [
-    { id: 1, name: "Червоні Троянди", price: 850, img: " "},
-    { id: 2, name: "Ніжні Півонії", price: 1200, img: ""},
-    { id: 3, name: "Весняні Тюльпани", price: 600, img:"tylpany.js"},
-    { id: 4, name: "Білі Лілії", price: 950, img: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?q=80&w=600" },
+    { id: 1, name: "Червоні Троянди", price: 850, img: "redrose.png"},
+    { id: 2, name: "Ніжні Півонії", price: 1200, img: "pivony.jpg"},
+    { id: 3, name: "Весняні Тюльпани", price: 600, img: "tulpany.jpg"},
+    { id: 4, name: "Білі Лілії", price: 950, img: "lily.jpg" },
     { id: 5, name: "Букет Лаванди", price: 450, img: "https://images.unsplash.com/photo-1565011523534-747a8601f10a?q=80&w=600" },
     { id: 6, name: "Соняшники", price: 700, img: "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=600" }
 ];
@@ -43,6 +43,7 @@ function updateCartUI() {
 
     totalDisplay.innerText = total;
 }
+   
 
 function toggleCart() {
     document.getElementById('cart-panel').classList.toggle('open');

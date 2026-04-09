@@ -101,5 +101,6 @@ header {
     padding: 30px;
 }
 
+    
 .cart-panel.open { right: 0; }
 .close-btn { background: none; border: none; font-size: 20px; cursor: pointer; float: right; }
