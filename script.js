@@ -5,8 +5,8 @@ const flowers = [
     { id: 4, name: "Білі Лілії", price: 950, img: "lily.jpg" },
     { id: 5, name: "Букет Лаванди", price: 450, img: "https://images.unsplash.com/photo-1565011523534-747a8601f10a?q=80&w=600" },
     { id: 6, name: "Соняшники", price: 700, img: "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=600" },
-    { id: 7, name: "Еустоми", price: 868, img: "eustome.png"  },
-    { id: 8, name: "Ранункулюси", price: 706, img: "images(6).jpg" },
+    { id: 7, name: "Еустоми", price: 868, img: "https://kvitka.od.ua/image/cache/catalog/kvitu-new/buket-charivnycia-1-500x500.jpeg"  },
+    { id: 8, name: "Ранункулюси", price: 706, img: "https://proflowers.ua/upload/images/showcase/3396.jpg" },
     { id: 9, name: "Гіпсофіли", price: 1000, img: "gipsofil.jpg" },
     { id: 10, name: "Гвоздики", price: 530, img: "gvozdics.jpg" },
     { id: 11, name: "Бузок", price: 746, img: "buzoc.jpg" }
@@ -52,4 +52,7 @@ function updateCartUI() {
 
 function toggleCart() {
     document.getElementById('cart-panel').classList.toggle('open');
+}
+document.getElementById('order-btn').onclick = function() {
+    document.getElementById('modal-overlay').style.display = 'flex';
 }
